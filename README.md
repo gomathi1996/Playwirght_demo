@@ -7,3 +7,9 @@ By default, Playwright runs the browsers in headless mode. To see the browser UI
  playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(50));
 
  ![image](https://github.com/gomathi1996/Playwirght_demo/assets/30540632/6266cfa9-9c49-42dd-a0d6-57e0f5983cdd)
+
+![image](https://github.com/gomathi1996/Playwirght_demo/assets/30540632/fb3292e3-93a5-492f-a0b8-8494daca7401)
+
+![image](https://github.com/gomathi1996/Playwirght_demo/assets/30540632/0d211526-a1bd-41c8-9c4a-5803c5ecfca5)
+
+![image](https://github.com/gomathi1996/Playwirght_demo/assets/30540632/d6663845-a18c-421d-99a4-62590726ab3d)
