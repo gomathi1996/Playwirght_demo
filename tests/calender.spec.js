@@ -1,7 +1,7 @@
 const { test, expect } = require("@playwright/test");
 const { console } = require("inspector");
 
-test.only("Calander Handling examples", async ({ page }) => {
+test("Calander Handling examples", async ({ page }) => {
 
     const month= "12";
     const date= "13";
@@ -17,8 +17,7 @@ test.only("Calander Handling examples", async ({ page }) => {
     const inputs = page.locator(".react-date-picker__inputGroup__input");
     for(let index=0 ; index<inputs.length; index++){
         let value = await inputs(index).getAttribute("value");
-        console.log(await inputs(index).getAttribute("value"));
-        
+        console.log(await inputs(index).getAttribute("value")); 
         expect(value).toEqual(expectedArray[index]);
     }
 
