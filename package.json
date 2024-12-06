@@ -4,7 +4,10 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.47.2",
-    "@types/node": "^22.7.2"
+    "@types/node": "^22.7.2",
+    "exceljs": "^4.4.0"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "npx playwright test webAPIPart1.spec.js --headed"
+  }
 }
