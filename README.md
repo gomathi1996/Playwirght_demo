@@ -13,3 +13,43 @@ By default, Playwright runs the browsers in headless mode. To see the browser UI
 ![image](https://github.com/gomathi1996/Playwirght_demo/assets/30540632/0d211526-a1bd-41c8-9c4a-5803c5ecfca5)
 
 ![image](https://github.com/gomathi1996/Playwirght_demo/assets/30540632/d6663845-a18c-421d-99a4-62590726ab3d)
+
+### Command to run test with custom configuration
+```
+  projects: [
+    {
+      name: "chromium",
+      use: {
+        browserName: "chromium",
+        trace: "on",
+        headless: false,
+        screenshot: "on",
+      },
+    },
+
+    {
+      name: "firefox",
+      use: { 
+        browserName: "firefox",
+        trace: "on",
+        headless: false,
+        screenshot: "on",
+      },
+       },
+ 
+
+    {
+      name: "webkit",
+      use: { 
+        browserName: "webkit",
+        trace: "on",
+        headless: false,
+        screenshot: "on",
+      }
+       },
+      
+],
+```
+npx playwright test --config .\playwright.config1.js 
+
+npx playwright test --config .\playwright.config1.js --project=webkit
