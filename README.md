@@ -53,3 +53,48 @@ By default, Playwright runs the browsers in headless mode. To see the browser UI
 npx playwright test --config .\playwright.config1.js 
 
 npx playwright test --config .\playwright.config1.js --project=webkit
+
+#### Run test using tag
+npx playwright test --config .\playwright.config1.js --project=chromium --grep "@web"
+```
+test(`@web End to End testing`, async ({ page,testDataForOrder }) => {
+  .....................
+}
+```
+
+#### Allure report
+npm install -g allure-commandline --save-dev
+
+npm i allure-playwright
+
+npx playwright test --config .\playwright.config1.js --project=chromium --grep "@web" --reporter=line,allure-playwright
+
+allure generate ./allure-results --clean
+
+allure open ./allure-report
+
+![alt text](image.png)
+
+#### Configure custom script to run the test
+
+Update the custom test in package.json
+
+  "scripts": {
+    "test": "npx playwright test Login.spec.js --headed",
+    "pomwebtest": "npx playwright test --config ./playwright.config1.js --project=chromium --grep '@web' --reporter=line,allure-playwright",
+    "pomtest": "npx playwright test --config ./playwright.config1.js --project=chromium"
+  }
+  
+  Then run the following command
+
+  npm run pomtest
+
+  #### Jenkins Configuration
+
+  Download jenkin war - https://www.jenkins.io/download/
+
+  java -jar jenkins.war --httpPort=9090
+
+  ![alt text](image-1.png)
+
+  

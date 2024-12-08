@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8768","@web End to End testing","chromium","Sun Dec 08 11:13:05 IST 2024","passed","Sun Dec 08 11:13:14 IST 2024","","tests\Login.spec.js","",""
+"","8591","End to End testing with ADIDAS ORIGINAL","chromium","Sun Dec 08 11:12:55 IST 2024","passed","Sun Dec 08 11:13:04 IST 2024","","tests\Login.spec.js","",""
+"","10427","End to End testing with ZARA COAT 3","chromium","Sun Dec 08 11:12:43 IST 2024","passed","Sun Dec 08 11:12:54 IST 2024","","tests\Login.spec.js","",""

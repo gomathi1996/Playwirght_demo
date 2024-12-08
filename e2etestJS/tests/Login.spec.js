@@ -32,7 +32,7 @@ for (const data of dataset) {
   });
 }
 
-test(`End to End testing`, async ({ page,testDataForOrder }) => {
+test(`@web End to End testing`, async ({ page,testDataForOrder }) => {
   const poManager = new POManager(page);
   const loginPage = poManager.getLoginPage();
   const dashboardPage = poManager.getDashboardPage();

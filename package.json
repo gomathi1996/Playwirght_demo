@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "allure-playwright": "^3.0.7",
     "playwright": "^1.49"
   },
   "devDependencies": {
@@ -8,6 +9,8 @@
     "exceljs": "^4.4.0"
   },
   "scripts": {
-    "test": "npx playwright test Login.spec.js --headed"
+    "test": "npx playwright test Login.spec.js --headed",
+    "pomwebtest": "npx playwright test --config ./playwright.config1.js --project=chromium --grep '@web' --reporter=line,allure-playwright",
+    "pomtest": "npx playwright test --config ./playwright.config1.js --project=chromium"
   }
 }
