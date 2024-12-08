@@ -97,4 +97,12 @@ Update the custom test in package.json
 
   ![alt text](image-1.png)
 
+  #### Playwright Installation
+
+  npm install typescript --save-dev
   
+  tsc demo.ts
+  node demo.js 
+
+  https://playwright.dev/docs/test-typescript
+  https://playwright.dev/docs/pom
